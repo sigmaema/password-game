@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #00ffe0, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    background: #222;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #fff;
+    transition: border 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 800px;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #00ffe0;
+    box-shadow: 0 0 10px #00ffe0;
+    outline: none;
+}
+
+#rules {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#rules div {
+    background: #222;
+    border-left: 4px solid #00aaff;
+    padding: 12px 16px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+#rules div:hover {
+    transform: scale(1.02);
+    background: #2a2a2a;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="text"] {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
+#successPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  border: 2px solid #00ff99;
+  color: #00ff99;
+  padding: 30px 40px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff99;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+#successPopup.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+#successPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  border: 2px solid #00ff99;
+  color: #00ff99;
+  padding: 30px 40px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff99;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+#successPopup.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
